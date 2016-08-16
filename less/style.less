@@ -1,18 +1,37 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic";
+@import "reset.less";
+@import "../material/less/_colors.less";
+@white: #fff;
+@black: #000;
+@light: #f8f8f8;
+@lightgray: #e8e8e8;
+@gray: #ddd;
+@primary: @blue-900;
+@primary_2: lighten(@primary, 10%);
+@primary_3: lighten(@primary, 20%);
+@primary_4: lighten(@primary, 25%);
+@primary_-1: darken(@primary, 5%);
+@primary_-2: darken(@primary, 10%);
+@primary_-3: darken(@primary, 15%);
+@primary_-4: darken(@primary, 18%);
 @import "anicollection.less";
 @import "lesshat.less";
 @import "shadows.less";
-@import "../material/less/_colors.less";
-@import "../material/less/_variables.less";
+@import "snackbar.less";
 a:focus {
-    outline: none;
+    outline: none!important;
 }
 html {
     position: relative;
     min-height: 100%;
 }
+.modal-backdrop {
+    background-color: @black
+}
 body {
-    margin-bottom: 50px;
-    font-family: 'Roboto';
+    -webkit-font-smoothing: antialiased!important;
+    font-family: 'Open Sans', sans-serif;
+    background-color: @white;
     .h1,
     .h2,
     .h3,
@@ -23,6 +42,21 @@ body {
     h4,
     h5,
     h6 {
-        font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    }
+    code {
+        background-color: fade(@primary_4, 30%)!important;
+        color: @primary_-3;
+        display: inline-block;
+    }
+    blockquote {
+        font-size: 14px;
+    }
+    section.mainsection {
+        position: relative;
+        top: -50px;
+        z-index: 3;
     }
 }
+
+@import "index.less";
