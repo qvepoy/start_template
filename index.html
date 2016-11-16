@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="favicon.png">
@@ -24,7 +24,8 @@
 
 
 
-        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
@@ -32,6 +33,7 @@
         <script type="text/javascript" src="swipebox/js/jquery.swipebox.js"></script>
         <script type="text/javascript" src="material/js/material.min.js"></script>
         <script type="text/javascript" src="material/js/ripples.min.js"></script>
+
         <script type="text/javascript">
             //нахождение ширины скролбара
             var div = document.createElement('div');
@@ -43,20 +45,20 @@
             var scrollWidth = div.offsetWidth - div.clientWidth;
             document.body.removeChild(div);
         </script>
-        <script type="text/javascript">
 
+        <script type="text/javascript">
             $.material.init();
             $('.swipebox').swipebox({
-                hideBarsDelay: 0, // delay before hiding bars on desktop
+                hideBarsDelay: 0,
                 hideCloseButtonOnMobile: true,
                 useSVG: true,
                 autoplayVideos: true,
-                //                    loopAtEnd: true,
             })
         </script>
 
         <script type="text/javascript">
             $('[data-placement]').tooltip({'animation': false, 'trigger': 'hover'});
+
             $('#homenav').localScroll({
                 hash: false,
                 offset: {
@@ -65,6 +67,7 @@
                 duration: 800,
                 easing: 'easeInOutQuint'
             })
+
             $('.locallink').localScroll({
                 hash: false,
                 offset: {
