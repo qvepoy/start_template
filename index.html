@@ -12,27 +12,24 @@
         <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="material/css/bootstrap-material-design.css">
         <link rel="stylesheet" type="text/css" href="material/css/ripples.css">
-        <link rel="stylesheet" type="text/css" href="swipebox/css/swipebox.css"/>
+        <link rel="stylesheet" type="text/css" href="swipebox/css/swipebox.css"/> <!-- Jquery library -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!--[if lt IE 9]>
-        <script src="js/ie9/html5shiv.min.js"></script>
-        <script src="js/ie9/respond.min.js"></script>
-        <![endif]-->
+        <!--[if lt IE 9]> <script src="js/ie9/html5shiv.min.js"></script> <script src="js/ie9/respond.min.js"></script> <![endif]-->
     </head>
     <body class="index">
 
+        <div class="header">
+            <h1>Screen Grab</h1>
+        </div>
 
-
-
-
-        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-        <script type="text/javascript" src="swipebox/js/jquery.swipebox.js"></script>
+        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script> <!-- Jquery library -->
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> <!--  -->
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> <!-- анимации -->
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script> <!-- для якорей -->
+        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script> <!-- для якорей -->
+        <script type="text/javascript" src="swipebox/js/jquery.swipebox.js"></script> <!-- Для открытия изображений -->
         <script type="text/javascript" src="material/js/material.min.js"></script>
-        <script type="text/javascript" src="material/js/ripples.min.js"></script>
+        <script type="text/javascript" src="material/js/ripples.min.js"></script> <!-- анимация (волны по клику) -->
 
         <script type="text/javascript">
             //нахождение ширины скролбара
@@ -46,16 +43,13 @@
             document.body.removeChild(div);
         </script>
 
+        <!-- Для открытия изображений -->
         <script type="text/javascript">
             $.material.init();
-            $('.swipebox').swipebox({
-                hideBarsDelay: 0,
-                hideCloseButtonOnMobile: true,
-                useSVG: true,
-                autoplayVideos: true,
-            })
+            $('.swipebox').swipebox({hideBarsDelay: 0, hideCloseButtonOnMobile: true, useSVG: true, autoplayVideos: true})
         </script>
 
+        <!-- Всплывающие подсказки -->
         <script type="text/javascript">
             $('[data-placement]').tooltip({'animation': false, 'trigger': 'hover'});
 
@@ -80,6 +74,5 @@
                 }
             })
         </script>
-
     </body>
 </html>
