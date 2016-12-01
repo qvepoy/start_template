@@ -19,7 +19,74 @@
     <body class="index">
 
         <div class="header">
-            <h1>Screen Grab</h1>
+            <div class="menu">
+                <a href="">
+                    <img src="images/menu.svg" alt=""/>
+                </a>
+            </div>
+            <div class="center">
+
+                <h1>Halcyondays</h1>
+                <h2>An exclusive HTML5/CSS3 freebie by Peter Finlan, for Codrops</h2>
+                <button type="button" name="button">
+                    Learn more
+                </button>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h3>A create protfolio template</h3>
+
+            <p>
+                Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+        </div>
+
+        <div class="services_iphone">
+            <h3>
+                Responsive design specialist
+            </h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+
+                Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.
+
+                Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.
+            </p>
+        </div>
+
+        <div class="counter">
+            <h4>
+                I got 99 problems
+            </h4>
+            <span>
+                but design
+            </span>
+            <span>
+                'aint one'
+            </span>
+
+        </div>
+
+        <div class="portfolio">
+
+        </div>
+
+        <div class="ignite">
+
+        </div>
+
+        <div class="team">
+
+        </div>
+
+        <div class="subscribe">
+
+        </div>
+
+        <div class="footer">
+
         </div>
 
         <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script> <!-- Jquery library -->
@@ -73,6 +140,10 @@
                     $('.navbar-collapse').collapse('hide');
                 }
             })
+            $('img', '.menu').each(function (index) {
+                var src = $(this).attr('src');
+                $(this).parent().load(src)
+            });
         </script>
     </body>
 </html>

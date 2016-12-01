@@ -8,7 +8,82 @@ h1 {
 
 .header {
     font-family: 'font-awesome';
-    background-color: #0095e8;
-    height: 50px;
-    .box-shadow-material(2);
+    background-image: url('/images/shape1.png') ;
+    background-size: 100%;
+    height: 800px;
+    .menu {
+        position: absolute;
+        svg {
+            color: @black;
+            width: 26px;
+        }
+    }
+    .center {
+        padding-top: 160px;
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+            padding-bottom: 28px;
+        }
+        h2 {
+            font-size: 15px;
+            padding-bottom: 66px;
+        }
+        button {
+            background-color: @see;
+            border: 0px;
+            font-size: 15px;
+            color: @white;
+            width: 200px;
+            height: 64px;
+            border-bottom: 2px solid darken(@see,10%);
+            border-radius: 6px;
+            .transition(all 0.15s ease-in-out);
+        }
+
+        button:hover {
+            .translateY(-2px);
+            .box-shadow-material(2);
+        }
+
+        button:active {
+            .translateY(-1px);
+            .transition(all 0s ease-in-out);
+            .box-shadow-material(1);
+            background: darken(@see,10%);
+        }
+    }
+}
+
+.intro {
+    height: 730px;
+}
+
+.services_iphone {
+    height: 700px;
+}
+
+.counter {
+    height: 300px;
+}
+
+.portfolio {
+    height: 660px;
+}
+
+.ignite {
+    height: 200px;
+}
+
+.team {
+    height: 900px;
+}
+
+.subscribe {
+    height: 450px;
+}
+
+.footer {
+    height: 800px;
 }
